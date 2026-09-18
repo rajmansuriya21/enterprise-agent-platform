@@ -1,0 +1,112 @@
+{
+  "routing": {
+    "accuracy": 0.8666666666666667,
+    "correct": 13,
+    "total": 15,
+    "details": [
+      {
+        "query": "What is the company's leave policy?",
+        "expected": "rag_agent",
+        "predicted": "rag_agent",
+        "correct": true
+      },
+      {
+        "query": "How many sick days do employees get?",
+        "expected": "rag_agent",
+        "predicted": "sql_agent",
+        "correct": false
+      },
+      {
+        "query": "Tell me about the Q3 financial results",
+        "expected": "rag_agent",
+        "predicted": "rag_agent",
+        "correct": true
+      },
+      {
+        "query": "What are the pricing tiers for Enterprise Suite?",
+        "expected": "rag_agent",
+        "predicted": "rag_agent",
+        "correct": true
+      },
+      {
+        "query": "Show total sales by region",
+        "expected": "sql_agent",
+        "predicted": "sql_agent",
+        "correct": true
+      },
+      {
+        "query": "How many employees are in engineering?",
+        "expected": "sql_agent",
+        "predicted": "sql_agent",
+        "correct": true
+      },
+      {
+        "query": "What is the average salary by department?",
+        "expected": "sql_agent",
+        "predicted": "sql_agent",
+        "correct": true
+      },
+      {
+        "query": "List all products with their prices",
+        "expected": "sql_agent",
+        "predicted": "sql_agent",
+        "correct": true
+      },
+      {
+        "query": "Top 5 customers by total spend",
+        "expected": "sql_agent",
+        "predicted": "sql_agent",
+        "correct": true
+      },
+      {
+        "query": "What's the weather in New York?",
+        "expected": "api_agent",
+        "predicted": "api_agent",
+        "correct": true
+      },
+      {
+        "query": "Get the current AAPL stock price",
+        "expected": "api_agent",
+        "predicted": "api_agent",
+        "correct": true
+      },
+      {
+        "query": "Show me the latest tech news",
+        "expected": "api_agent",
+        "predicted": "sql_agent",
+        "correct": false
+      },
+      {
+        "query": "What is the temperature in London?",
+        "expected": "api_agent",
+        "predicted": "api_agent",
+        "correct": true
+      },
+      {
+        "query": "Extract data from the uploaded PDF",
+        "expected": "doc_agent",
+        "predicted": "doc_agent",
+        "correct": true
+      },
+      {
+        "query": "Parse this document and show the tables",
+        "expected": "doc_agent",
+        "predicted": "doc_agent",
+        "correct": true
+      }
+    ]
+  },
+  "latency": {
+    "samples": 100,
+    "mean_ms": 323.5,
+    "p50_ms": 326.9,
+    "p95_ms": 405.3,
+    "p99_ms": 460.1
+  },
+  "tool_calls": {
+    "total_calls": 2500,
+    "successful_calls": 2350,
+    "failed_calls": 150,
+    "success_rate": 0.94
+  }
+}
